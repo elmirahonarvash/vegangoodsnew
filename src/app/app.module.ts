@@ -9,20 +9,26 @@ import { ProductComponent } from './product/product.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SignupComponent } from './signup/signup.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     WelcomeComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent,
+    ShoppingcartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

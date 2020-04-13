@@ -3,13 +3,20 @@
     Sidenav content
   </mat-sidenav>
   <mat-sidenav-content>
-    
     <mat-toolbar color="primary">
-      <div>
-        <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon aria-hidden="false">menu</mat-icon>
-        </button>
-      </div>
+      
+        <div fxLayoutGap="10px">
+          <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon aria-hidden="false">menu</mat-icon>
+          </button>
+      
+          <a routerLink="shoppingcart">
+            <button mat-icon-button>
+            <mat-icon aria-hidden="false">shopping_cart</mat-icon>
+          </button>
+          </a>
+        </div>
+      
       <div>
         <ul fxLayout="row" fxLayoutGap="30px">
           <li>
@@ -21,9 +28,11 @@
           <li>
             <a routerLink="signup">Signup</a>
           </li>
+          <li>
+            <a routerLink="login">Login</a>
+          </li>
         </ul>
       </div>
-
     </mat-toolbar>
     <main>
       <router-outlet></router-outlet>

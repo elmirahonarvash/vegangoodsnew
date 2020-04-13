@@ -1,1 +1,30 @@
-<p>signup works!</p>
+<div fxLayoutAlign="center center">
+  <mat-card fxLayoutAlign="center center">
+    
+      <form [formGroup]="signupForm" fxLayout="column">
+        <mat-form-field appearance="fill">
+          <mat-label> Your Full Name</mat-label>
+          <input matInput formControlName="fullName" />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label> Your Email</mat-label>
+            <input matInput formControlName="emailAddress" />
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label> Your Number</mat-label>
+            <input matInput formControlName="number" />
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label> Your Birth Date</mat-label>
+            <input matInput formControlName="birthDate" />
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label> Your Address</mat-label>
+            <input matInput formControlName="address" />
+          </mat-form-field>
+      </form>
+ 
+  </mat-card>
+</div>
+
+<!-- {{ signupForm.value | json }} -->
