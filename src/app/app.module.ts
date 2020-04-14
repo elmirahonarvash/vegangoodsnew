@@ -12,6 +12,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
     WelcomeComponent,
     SignupComponent,
     LoginComponent,
-    ShoppingcartComponent
+    ShoppingcartComponent,
+    AboutusComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
