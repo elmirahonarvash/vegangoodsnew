@@ -1,20 +1,19 @@
 <div fxLayoutAlign="center center">
-    <mat-card fxLayoutAlign="center">
-      
-        <form  [formGroup]="contactusForm" fxLayout="column" fxLayoutGap="20px">
-          <mat-form-field class="form-container" appearance="fill">
-            <mat-label>NAME</mat-label>
-            <input matInput formControlName="fullName" />
-          </mat-form-field>
-          <mat-form-field appearance="fill">
-              <mat-label>EMAIL</mat-label>
-              <input matInput formControlName="emailAddress" />
-            </mat-form-field>
-            <mat-form-field  appearance="fill">
-              <mat-label>MESSAGE</mat-label>
-              <input matInput formControlName="message" class="field" />
-            </mat-form-field>
-        </form>
-
-    </mat-card>
-  </div>
+  <mat-card fxLayoutAlign="center">
+    <form [formGroup]="contactusForm" fxLayout="column" fxLayoutGap="20px">
+      <h1 class="item" fxLayoutAlign="center center">ContactUs</h1>
+      <mat-form-field class="form-container" appearance="fill">
+        <mat-label>NAME</mat-label>
+        <input matInput formControlName="fullName" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>EMAIL</mat-label>
+        <input matInput formControlName="emailAddress" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>MESSAGE</mat-label>
+        <input matInput formControlName="message" class="field" />
+      </mat-form-field>
+    </form>
+  </mat-card>
+</div>

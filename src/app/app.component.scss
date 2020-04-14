@@ -35,9 +35,9 @@ mat-toolbar {
 // }
 mat-sidenav-container{
     background-image: url(src\background-2.jpg);
-  
+  height: 100vh;
   background-size:cover;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat repeat;
 
 }
 

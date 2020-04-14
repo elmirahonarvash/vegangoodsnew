@@ -15,6 +15,7 @@ import { ShoppingcartComponent } from './shoppingcart/shoppingcart.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     LoginComponent,
     ShoppingcartComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+
   ],
   imports: [
     BrowserModule,

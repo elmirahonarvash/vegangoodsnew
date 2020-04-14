@@ -1,22 +1,28 @@
 form {
   width: 300px;
-  
 }
 
 mat-card {
   width: 500px;
-  height: 500px;
-  margin-top: 80px;
-//  background-color: black;
-border:solid 10px black;
+  height: 550px;
+  margin-top: 60px;
+  //  background-color: black;
+  border-top: solid 15px black;
+  opacity: 0.8;
 }
 
-
-
-.form-container{
-    margin-top: 40px;
+.form-container {
+  margin-top: 40px;
 }
 
-.field{
-    height: 80px;
+.field {
+  height: 80px;
+}
+
+mat-label {
+  font-weight: 950;
+}
+
+.item {
+  margin-bottom: 40px;
 }
