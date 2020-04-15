@@ -1,29 +1,25 @@
 <mat-sidenav-container class="example-container">
-  
   <mat-sidenav mode="side" #sidenav>
-    
-      <ul fxLayout="column" fxLayoutGap="30px">
-        <li>
-          <a routerLink="welcome">Home</a>
-        </li>
-        <li>
-          <a routerLink="product">Products</a>
-        </li>
-        <li>
-          <a routerLink="signup">Signup</a>
-        </li>
-        <li>
-          <a routerLink="login">Login</a>
-        </li>
-        <li>
-          <a routerLink="aboutus">AboutUs</a>
-        </li>
-        <li>
-          <a routerLink="contactus">ContactUs</a>
-        </li>
-      </ul>
-    
-    
+    <ul fxLayout="column" fxLayoutGap="30px">
+      <li>
+        <a routerLink="welcome" (click)="sidenav.close()">Home</a>
+      </li>
+      <li>
+        <a routerLink="product" (click)="sidenav.close()">Products</a>
+      </li>
+      <li>
+        <a routerLink="signup" (click)="sidenav.close()">Signup</a>
+      </li>
+      <li>
+        <a routerLink="login" (click)="sidenav.close()">Login</a>
+      </li>
+      <li>
+        <a routerLink="aboutus" (click)="sidenav.close()">AboutUs</a>
+      </li>
+      <li>
+        <a routerLink="contactus" (click)="sidenav.close()">ContactUs</a>
+      </li>
+    </ul>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar>
@@ -39,36 +35,40 @@
         </a>
       </div>
 
-      <div>
-        <ul fxLayout="row" fxLayoutGap="30px">
-          <li>
-            <a routerLink="welcome">Home</a>
-          </li>
-          <li>
-            <a routerLink="product">Products</a>
-          </li>
-          <li>
-            <a routerLink="signup">Signup</a>
-          </li>
-          <li>
-            <a routerLink="login">Login</a>
-          </li>
-          <li>
-            <a routerLink="aboutus">About us</a>
-          </li>
-          <li>
-            <a routerLink="contactus">Contact us</a>
-          </li>
-        </ul>
-      </div>
+      
+        <div fxFlex>
+          <ul fxLayout="row" fxLayoutGap="30px">
+            <li>
+              <a routerLink="welcome">Home</a>
+            </li>
+            <li>
+              <a routerLink="product">Products</a>
+            </li>
+            <li>
+              <a routerLink="aboutus">About us</a>
+            </li>
+            <li>
+              <a routerLink="contactus">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="auth">
+          <ul fxLayout="row" fxLayoutGap="30px">
+            <li>
+              <a routerLink="signup">Signup</a>
+            </li>
+            <li>
+              <a routerLink="login">Login</a>
+            </li>
+          </ul>
+        </div>
+     
     </mat-toolbar>
-    
-    <main class="background" >
-      <router-outlet ></router-outlet>
+
+    <main class="background">
+      <router-outlet></router-outlet>
     </main>
     <!-- <div class="background"></div> -->
-    
   </mat-sidenav-content>
-  
-
 </mat-sidenav-container>
