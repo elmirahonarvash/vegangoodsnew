@@ -3,17 +3,26 @@
     <form [formGroup]="contactusForm" fxLayout="column" fxLayoutGap="20px">
       <h1 class="item" fxLayoutAlign="center center">ContactUs</h1>
       <mat-form-field class="form-container" appearance="fill">
-        <mat-label>NAME</mat-label>
+        <mat-label>Name</mat-label>
         <input matInput formControlName="fullName" />
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label>EMAIL</mat-label>
+        <mat-label>Email</mat-label>
         <input matInput formControlName="emailAddress" />
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label>MESSAGE</mat-label>
-        <input matInput formControlName="message" class="field" />
+        <mat-label>Number</mat-label>
+        <input matInput formControlName="number" />
       </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea matInput formControlName="message" class="field"></textarea>
+      </mat-form-field>
+      <div fxLayoutAlign="center">
+        <button mat-raised-button class="btn1">
+          SEND
+        </button>
+      </div>
     </form>
   </mat-card>
 </div>

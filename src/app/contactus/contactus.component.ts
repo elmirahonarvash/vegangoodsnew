@@ -15,6 +15,7 @@ export class ContactusComponent implements OnInit {
     this.contactusForm = this.fb.group({
       fullName: "",
       emailAddress: "",
+      number: "",
       message:"",
     });
   }

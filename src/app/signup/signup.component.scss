@@ -10,14 +10,23 @@ mat-card {
   opacity: 0.8;
 }
 
-// .mat-field {
-//   margin-top: 30px;
-// }
+.mat-field {
+  margin-top: 0px;
+}
 
 mat-label {
   font-weight: 950;
+  color: rgba(0, 0, 0, 0.623);
 }
 
 .type {
-  margin-bottom: 40px;
+  margin-block-start: 0.05em;
+  margin-block-end: 0.05em;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
+}
+
+.btn {
+  width: 150px;
+  background-color: rgba(39, 95, 44, 0.774);
 }

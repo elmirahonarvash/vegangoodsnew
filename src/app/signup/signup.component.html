@@ -3,26 +3,32 @@
     <form [formGroup]="signupForm" fxLayout="column">
       <h1 class="type" fxLayoutAlign="center center">SignUp</h1>
       <mat-form-field class="mat-field" appearance="fill">
-        <mat-label> Your Full Name</mat-label>
+        <mat-label>FullName</mat-label>
         <input matInput formControlName="fullName" />
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label> Your Email</mat-label>
+        <mat-label>Email</mat-label>
         <input matInput formControlName="emailAddress" />
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label> Your Number</mat-label>
+        <mat-label>Number</mat-label>
         <input matInput formControlName="number" />
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label> Your Birth Date</mat-label>
-        <input matInput formControlName="birthDate" />
+        <mat-label>Choose A Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="birthDate" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
       <mat-form-field appearance="fill">
-        <mat-label> Your Address</mat-label>
+        <mat-label>Address</mat-label>
         <input matInput formControlName="address" />
       </mat-form-field>
-     
+      <div fxLayoutAlign="center">
+        <button mat-raised-button class="btn">
+          SUBMIT
+        </button>
+      </div>
     </form>
   </mat-card>
 </div>

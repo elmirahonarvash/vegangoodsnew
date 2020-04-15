@@ -4,25 +4,41 @@ form {
 
 mat-card {
   width: 500px;
-  height: 550px;
   margin-top: 60px;
-  //  background-color: black;
   border-top: solid 15px black;
   opacity: 0.8;
 }
 
 .form-container {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
-.field {
-  height: 80px;
-}
+// .field {
+//   height: 80px;
+// }
 
 mat-label {
   font-weight: 950;
+  color: rgba(0, 0, 0, 0.623);
 }
 
 .item {
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
+}
+
+.btn1 {
+  width: 150px;
+  background-color: rgba(39, 95, 44, 0.774);
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: white;
+}
+/* Font color */
+input.mat-input-element {
+  color: white;
 }
