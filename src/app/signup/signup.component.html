@@ -6,6 +6,14 @@
         <mat-label>FullName</mat-label>
         <input matInput formControlName="fullName" />
       </mat-form-field>
+      <mat-form-field>
+        <mat-label>Gender</mat-label>
+        <mat-select formControlName="gender">
+          <mat-option *ngFor="let item of gender" [value]="item.value">
+            {{ item.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Email</mat-label>
         <input matInput formControlName="emailAddress" />
@@ -22,7 +30,7 @@
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Address</mat-label>
-        <input matInput formControlName="address" />
+        <textarea matInput formControlName="address" class="field"></textarea>
       </mat-form-field>
       <div fxLayoutAlign="center">
         <button mat-raised-button class="btn">
