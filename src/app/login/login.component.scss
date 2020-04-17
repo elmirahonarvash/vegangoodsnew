@@ -1,0 +1,29 @@
+form {
+    width: 300px;
+  }
+  
+  .item {
+  // margin-bottom: 40px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
+}
+
+mat-card {
+  width: 500px;
+  margin-top: 60px;
+  border-top: solid 15px black;
+  opacity: 0.8;
+}
+
+.btn6 {
+  width: 150px;
+  background-color: rgba(39, 95, 44, 0.774);
+}
+
+mat-label {
+    font-weight: 950;
+    color: rgba(0, 0, 0, 0.712);
+}
+
